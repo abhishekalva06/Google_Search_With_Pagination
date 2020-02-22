@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.IIT.pageObjects.Keywords">
+        <methods>
+          <include name="newTab"/>
+          <include name="input"/>
+          <include name="robotenter"/>
+          <include name="navigateback"/>
+          <include name="newwTab"/>
+          <include name="clearTextAndInputData"/>
+          <include name="rightclickopeninnewtabversionone"/>
+          <include name="selectbyvisibletextint"/>
+          <include name="scrolltolastelementoftable"/>
+          <include name="selectbyindex"/>
+          <include name="robotclick"/>
+          <include name="scrollDown"/>
+          <include name="navigate"/>
+          <include name="rightclickopeninnewtab"/>
+          <include name="switchtotabthree"/>
+          <include name="switchtotabzero"/>
+          <include name="update_input_values"/>
+          <include name="FloatValue"/>
+          <include name="newTabTwo"/>
+          <include name="refresh"/>
+          <include name="switchtotabone"/>
+          <include name="accept"/>
+          <include name="waitandgoback"/>
+          <include name="click"/>
+          <include name="rightclick"/>
+          <include name="sleep"/>
+          <include name="inputintwithchar"/>
+          <include name="robot"/>
+          <include name="selectbyvisibletextstring"/>
+          <include name="inputint"/>
+          <include name="select"/>
+          <include name="LoopToDeleteCategories"/>
+          <include name="newTabOne"/>
+          <include name="newTabZero"/>
+          <include name="switchtotabtwo"/>
+          <include name="selectbyvalue"/>
+          <include name="scrollUp"/>
+        </methods>
+      </class> <!-- com.IIT.pageObjects.Keywords -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

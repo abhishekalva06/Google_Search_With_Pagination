@@ -1,0 +1,25 @@
+Semester Name,Academic Course Code,Course Category Code,Is Core
+first,c1,cateone,Y
+first,c2,cateone,Y
+first,c3,catetwo,Y
+first,c4,catetwo,Y
+first,c6,catethree,Y
+second,c8,catethree,Y
+second,c9,catefour,Y
+second,c11,catefour,Y
+second,c15,catefive,Y
+second,c16,catefive,Y
+second,c17,catesix,Y
+second,c18,catesix,Y
+first,,cateoneele,
+first,,catetwoele,
+first,,catethreeele,
+first,,catefourele,
+first,,catefiveele,
+first,,catesixele,
+second,,cateoneele,
+second,,catetwoele,
+second,,catethreeele,
+second,,catefourele,
+second,,catefiveele,
+second,,catesixele,
