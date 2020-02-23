@@ -1,93 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26" started-at="2020-02-22T10:49:34Z" finished-at="2020-02-22T10:49:34Z">
+  <suite name="Suite" duration-ms="47048" started-at="2020-02-23T04:05:01Z" finished-at="2020-02-23T04:05:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26" started-at="2020-02-22T10:49:34Z" finished-at="2020-02-22T10:49:34Z">
-      <class name="bonus.MultipleBrowserSequentialRunner">
-        <test-method status="FAIL" signature="openBrowser(java.lang.String)[pri:0, instance:bonus.MultipleBrowserSequentialRunner@6fd02e5]" name="openBrowser" is-config="true" duration-ms="0" started-at="2020-02-22T10:49:34Z" finished-at="2020-02-22T10:49:34Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
-in /tmp/testng-eclipse-221946355/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
-in /tmp/testng-eclipse-221946355/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test name="Testclassname chrome" duration-ms="37489" started-at="2020-02-23T04:05:01Z" finished-at="2020-02-23T04:05:39Z">
+      <class name="bonus.MultipleBrowserParallelRunner">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:bonus.MultipleBrowserParallelRunner@e45f292]" name="openBrowser" is-config="true" duration-ms="885" started-at="2020-02-23T04:05:01Z" finished-at="2020-02-23T04:05:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="SKIP" signature="testmethod()[pri:0, instance:bonus.MultipleBrowserSequentialRunner@6fd02e5]" name="testmethod" duration-ms="0" started-at="2020-02-22T10:49:34Z" finished-at="2020-02-22T10:49:34Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
-in /tmp/testng-eclipse-221946355/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method openBrowser but has not been marked @Optional or defined
-in /tmp/testng-eclipse-221946355/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.TestRunner.beforeRun(TestRunner.java:529)
-at org.testng.TestRunner.run(TestRunner.java:497)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="testmethod()[pri:0, instance:bonus.MultipleBrowserParallelRunner@e45f292]" name="testmethod" duration-ms="36519" started-at="2020-02-23T04:05:02Z" finished-at="2020-02-23T04:05:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testmethod -->
-        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:bonus.MultipleBrowserSequentialRunner@6fd02e5]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2020-02-22T10:49:34Z" finished-at="2020-02-22T10:49:34Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:bonus.MultipleBrowserParallelRunner@e45f292]" name="closeBrowser" is-config="true" duration-ms="70" started-at="2020-02-23T04:05:38Z" finished-at="2020-02-23T04:05:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- bonus.MultipleBrowserSequentialRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- bonus.MultipleBrowserParallelRunner -->
+    </test> <!-- Testclassname chrome -->
+    <test name="Testclassname firefox" duration-ms="47048" started-at="2020-02-23T04:05:01Z" finished-at="2020-02-23T04:05:48Z">
+      <class name="bonus.MultipleBrowserParallelRunner">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:bonus.MultipleBrowserParallelRunner@617faa95]" name="openBrowser" is-config="true" duration-ms="3847" started-at="2020-02-23T04:05:01Z" finished-at="2020-02-23T04:05:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="testmethod()[pri:0, instance:bonus.MultipleBrowserParallelRunner@617faa95]" name="testmethod" duration-ms="38146" started-at="2020-02-23T04:05:05Z" finished-at="2020-02-23T04:05:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:bonus.MultipleBrowserParallelRunner@617faa95]" name="closeBrowser" is-config="true" duration-ms="5050" started-at="2020-02-23T04:05:43Z" finished-at="2020-02-23T04:05:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- bonus.MultipleBrowserParallelRunner -->
+    </test> <!-- Testclassname firefox -->
+  </suite> <!-- Suite -->
 </testng-results>

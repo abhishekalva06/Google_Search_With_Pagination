@@ -1,5 +1,7 @@
 package bonus;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
@@ -17,10 +19,10 @@ import org.testng.annotations.Test;
 
 
 
-public class MultipleBrowserSequentialRunner {
+public class MultipleBrowserParallelRunner {
 	String project_directory;
 	
-	WebDriver driver = null;
+	WebDriver driver=null;
 	
 	static String searchkeyword="Deployment";
 
