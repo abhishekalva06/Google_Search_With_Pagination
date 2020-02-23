@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suiteclassname]">
-  <test thread-count="5" name="Testclassname firefox(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suiteclassname]">
+  <test thread-count="2" name="Testclassname chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="bonus.MultipleBrowserSequentialRunner">
+        <methods>
+          <include name="testmethod"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- bonus.MultipleBrowserSequentialRunner -->
+    </classes>
+  </test> <!-- Testclassname chrome(failed) -->
+  <test thread-count="2" name="Testclassname firefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
       <class name="bonus.MultipleBrowserSequentialRunner">

@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="47048" started-at="2020-02-23T04:05:01Z" finished-at="2020-02-23T04:05:48Z">
+  <suite name="Suiteclassname" duration-ms="101950" started-at="2020-02-23T10:08:25Z" finished-at="2020-02-23T10:10:07Z">
     <groups>
     </groups>
-    <test name="Testclassname chrome" duration-ms="37489" started-at="2020-02-23T04:05:01Z" finished-at="2020-02-23T04:05:39Z">
-      <class name="bonus.MultipleBrowserParallelRunner">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:bonus.MultipleBrowserParallelRunner@e45f292]" name="openBrowser" is-config="true" duration-ms="885" started-at="2020-02-23T04:05:01Z" finished-at="2020-02-23T04:05:02Z">
+    <test name="Testclassname chrome" duration-ms="48515" started-at="2020-02-23T10:08:25Z" finished-at="2020-02-23T10:09:13Z">
+      <class name="bonus.MultipleBrowserSequentialRunner">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:bonus.MultipleBrowserSequentialRunner@e45f292]" name="openBrowser" is-config="true" duration-ms="1000" started-at="2020-02-23T10:08:25Z" finished-at="2020-02-23T10:08:26Z">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="testmethod()[pri:0, instance:bonus.MultipleBrowserParallelRunner@e45f292]" name="testmethod" duration-ms="36519" started-at="2020-02-23T04:05:02Z" finished-at="2020-02-23T04:05:38Z">
+        <test-method status="PASS" signature="testmethod()[pri:0, instance:bonus.MultipleBrowserSequentialRunner@e45f292]" name="testmethod" duration-ms="47411" started-at="2020-02-23T10:08:26Z" finished-at="2020-02-23T10:09:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testmethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:bonus.MultipleBrowserParallelRunner@e45f292]" name="closeBrowser" is-config="true" duration-ms="70" started-at="2020-02-23T04:05:38Z" finished-at="2020-02-23T04:05:39Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:bonus.MultipleBrowserSequentialRunner@e45f292]" name="closeBrowser" is-config="true" duration-ms="88" started-at="2020-02-23T10:09:13Z" finished-at="2020-02-23T10:09:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- bonus.MultipleBrowserParallelRunner -->
+      </class> <!-- bonus.MultipleBrowserSequentialRunner -->
     </test> <!-- Testclassname chrome -->
-    <test name="Testclassname firefox" duration-ms="47048" started-at="2020-02-23T04:05:01Z" finished-at="2020-02-23T04:05:48Z">
-      <class name="bonus.MultipleBrowserParallelRunner">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:bonus.MultipleBrowserParallelRunner@617faa95]" name="openBrowser" is-config="true" duration-ms="3847" started-at="2020-02-23T04:05:01Z" finished-at="2020-02-23T04:05:05Z">
+    <test name="Testclassname firefox" duration-ms="53424" started-at="2020-02-23T10:09:13Z" finished-at="2020-02-23T10:10:07Z">
+      <class name="bonus.MultipleBrowserSequentialRunner">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:bonus.MultipleBrowserSequentialRunner@617faa95]" name="openBrowser" is-config="true" duration-ms="2500" started-at="2020-02-23T10:09:13Z" finished-at="2020-02-23T10:09:16Z">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="testmethod()[pri:0, instance:bonus.MultipleBrowserParallelRunner@617faa95]" name="testmethod" duration-ms="38146" started-at="2020-02-23T04:05:05Z" finished-at="2020-02-23T04:05:43Z">
+        <test-method status="PASS" signature="testmethod()[pri:0, instance:bonus.MultipleBrowserSequentialRunner@617faa95]" name="testmethod" duration-ms="49477" started-at="2020-02-23T10:09:16Z" finished-at="2020-02-23T10:10:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testmethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:bonus.MultipleBrowserParallelRunner@617faa95]" name="closeBrowser" is-config="true" duration-ms="5050" started-at="2020-02-23T04:05:43Z" finished-at="2020-02-23T04:05:48Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:bonus.MultipleBrowserSequentialRunner@617faa95]" name="closeBrowser" is-config="true" duration-ms="1444" started-at="2020-02-23T10:10:05Z" finished-at="2020-02-23T10:10:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- bonus.MultipleBrowserParallelRunner -->
+      </class> <!-- bonus.MultipleBrowserSequentialRunner -->
     </test> <!-- Testclassname firefox -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Suiteclassname -->
 </testng-results>

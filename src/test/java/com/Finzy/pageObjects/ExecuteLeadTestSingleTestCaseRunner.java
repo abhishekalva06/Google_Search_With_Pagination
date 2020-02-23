@@ -572,31 +572,28 @@ public class ExecuteLeadTestSingleTestCaseRunner{
 //				}
 //			}
 //			
-			if(data.get(i).equals("googlesearchbox2")) {
-				runmode = (String)data.get(i+3);
-				if(runmode.equals("yes")) {
-					data_array = show_values(data, i);
-					elogger.log(Status.INFO,"Hit Enter key: "+data_array[2]);
-					keyword.googlesearchbox2(data_array[1],data_array[2]);
-					elogger.log(Status.PASS,"Hit Enter key: "+data_array[2]);
-					logger.info("Hit Enter key: "+data_array[2]);
-				}
+				if(data.get(i).equals("googlesearchbox2")) {
+					runmode = (String)data.get(i+3);
+					if(runmode.equals("yes")) {
+						data_array = show_values(data, i);
+						elogger.log(Status.INFO,"Click on: "+data_array[0]+ " in the "+data_array[2]+" search suggestions");
+						keyword.googlesearchbox2(data_array[1],data_array[2]);
+						elogger.log(Status.PASS,"Clicked on: "+data_array[0]+ " in the "+data_array[2]+" search suggestions");
+						logger.info("Clicked on: "+data_array[0]+ " in the "+data_array[2]+" search suggestions");
+					}
 
-			}
-			if(data.get(i).equals("searchKeyword")) {
-				runmode = (String)data.get(i+3);
-				if(runmode.equals("yes")) {
-					data_array = show_values(data, i);
-					elogger.log(Status.INFO,"Hit Enter key: "+data_array[2]);
-					keyword.searchKeyword(data_array[1],data_array[2]);
-					elogger.log(Status.PASS,"Hit Enter key: "+data_array[2]);
-					logger.info("Hit Enter key: "+data_array[2]);
 				}
+				if(data.get(i).equals("searchKeyword")) {
+					runmode = (String)data.get(i+3);
+					if(runmode.equals("yes")) {
+						data_array = show_values(data, i);
+						elogger.log(Status.INFO,"Checking if: "+data_array[1]+" is present in the page");
+						keyword.searchKeyword(data_array[1],data_array[2]);
+						elogger.log(Status.PASS,"Checked the presence of: "+data_array[1]+" in the page");
+						logger.info("Checked the presence of: "+data_array[1]+" in the page");
+					}
 
-			}
-				
-				
-				
+				}
 				
 				
 				

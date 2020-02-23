@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="2" name="Testclassname chrome(failed)" parallel="tests">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suiteclassname]">
+  <test thread-count="2" name="Testclassname chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="bonus.MultipleBrowserParallelRunner">
+      <class name="bonus.MultipleBrowserSequentialRunner">
         <methods>
           <include name="testmethod"/>
           <include name="closeBrowser"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- bonus.MultipleBrowserParallelRunner -->
+      </class> <!-- bonus.MultipleBrowserSequentialRunner -->
     </classes>
   </test> <!-- Testclassname chrome(failed) -->
-  <test thread-count="2" name="Testclassname firefox(failed)" parallel="tests">
+  <test thread-count="2" name="Testclassname firefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="bonus.MultipleBrowserParallelRunner">
+      <class name="bonus.MultipleBrowserSequentialRunner">
         <methods>
           <include name="testmethod"/>
           <include name="closeBrowser"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- bonus.MultipleBrowserParallelRunner -->
+      </class> <!-- bonus.MultipleBrowserSequentialRunner -->
     </classes>
   </test> <!-- Testclassname firefox(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+</suite> <!-- Failed suite [Suiteclassname] -->

@@ -158,7 +158,7 @@ public class ExecuteLeadTest{
 				if(data.get(i).equals("quit")) {
 					runmode = (String)data.get(i+3);
 					if(runmode.equals("yes")) {
-						elogger.log(Status.INFO,"close browser operation");
+						elogger.log(Status.INFO,"Close browser operation");
 						keyword.quit();
 						elogger.log(Status.PASS,"Browser closed");
 						logger.info(" Browser closed ");
@@ -612,10 +612,10 @@ public class ExecuteLeadTest{
 					runmode = (String)data.get(i+3);
 					if(runmode.equals("yes")) {
 						data_array = show_values(data, i);
-						elogger.log(Status.INFO,"Hit Enter key: "+data_array[2]);
+						elogger.log(Status.INFO,"Click on: "+data_array[0]+ " in the "+data_array[2]+" search suggestions");
 						keyword.googlesearchbox2(data_array[1],data_array[2]);
-						elogger.log(Status.PASS,"Hit Enter key: "+data_array[2]);
-						logger.info("Hit Enter key: "+data_array[2]);
+						elogger.log(Status.PASS,"Clicked on: "+data_array[0]+ " in the "+data_array[2]+" search suggestions");
+						logger.info("Clicked on: "+data_array[0]+ " in the "+data_array[2]+" search suggestions");
 					}
 
 				}
@@ -623,10 +623,10 @@ public class ExecuteLeadTest{
 					runmode = (String)data.get(i+3);
 					if(runmode.equals("yes")) {
 						data_array = show_values(data, i);
-						elogger.log(Status.INFO,"Hit Enter key: "+data_array[2]);
+						elogger.log(Status.INFO,"Checking if: "+data_array[1]+" is present in the page");
 						keyword.searchKeyword(data_array[1],data_array[2]);
-						elogger.log(Status.PASS,"Hit Enter key: "+data_array[2]);
-						logger.info("Hit Enter key: "+data_array[2]);
+						elogger.log(Status.PASS,"Checked the presence of: "+data_array[1]+" in the page");
+						logger.info("Checked the presence of: "+data_array[1]+" in the page");
 					}
 
 				}
